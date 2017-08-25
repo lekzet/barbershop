@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Барбершоп «Бородинский»</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body class="inner">
+        <header class="main-header">
+            <div class="container clearfix">
+                <nav class="main-navigation">
+                    <ul>
+                        <li><a href="index.html">Главная</a>
+                        <li><a href="#">Информация</a>
+                        <li><a href="#">Новости</a>
+                        <li><a href="price.html">Прайс-лист</a>
+                        <li class="active"><a href="shop.html">Магазин</a>
+                        <li><a href="#">Контакты</a>
+                    </ul>
+                </nav>
+                <div class="user-block">
+                    <a class="login" href="/login">Вход</a>
+                </div>
+            </div>
+        </header>
+    
+        <div class="container">
+            <div class="inner-header">
+                <h1 class="inner-title">Barbershop Borodinski - Магазин</h1>
+                <ul class="breadcrumbs">
+                    <li><a href="#">Главная</a>
+                    <li><a href="#">Магазин</a>
+                    <li><a href="#">Средства для ухода</a>
+                </ul>
+            </div>
+            <div class="shop-content clearfix">
+                <div class="shop-column-left">
+                    <form action="/echo" method="post">
+                        <h2 class="inner-subtitle">Производители</h2>
+                        <ul class="filter-brands">
+                            <li><input type="checkbox" id="1"><label for="1">Baxter of California</label>
+                            <li><input type="checkbox" id="2" checked><label for="2">Mr Natty</label>
+                            <li><input type="checkbox" id="3" checked><label for="3">Suavecito</label>
+                            <li><input type="checkbox" id="4"><label for="4">Malin+Goetz</label>
+                            <li><input type="checkbox" id="5"><label for="5">Murrays</label>
+                            <li><input type="checkbox" id="6"><label for="6">American Crew</label>
+                        </ul>
+                        <h2 class="inner-subtitle">Группы товаров</h2>
+                        <ul class="filter-groups">
+                            <li><input type="radio" name="items" id="7" checked><label for="7">Бритвенные принадлежности</label>
+                            <li><input type="radio" name="items" id="8"><label for="8">Средства для ухода</label>
+                            <li><input type="radio" name="items" id="9"><label for="9">Аксессуары</label>
+                        </ul>
+                            <button class="btn" type="submit">Показать</button>
+                    </form>
+                </div>
+                <div class="shop-column-right">
+                    <div class="shop-item">
+                        <div class="item-img"><a href="item.html"><img src="pict/shop1.jpg"></a></div>
+                        <h2 class="item-name"><a href="item.html">BAXTER OF CALIFORNIA<br>Набор для путешествий</a></h2>
+                        <p class="item-price">2900 руб.</p><a class="item-buy btn" href="#">Купить</a>
+                    </div>
+                    <div class="shop-item">
+                        <div class="item-img"><a href="#"><img src="pict/shop2.jpg"></a></div>
+                        <h2 class="item-name"><a href="#">BAXTER OF CALIFORNIA<br>Увлажняющий кондиционер</a></h2>
+                        <p class="item-price">750 руб.</p><a class="item-buy btn" href="#">Купить</a>
+                    </div>
+                    <div class="shop-item">
+                        <div class="item-img"><a href="#"><img src="pict/shop3.jpg"></a></div>
+                        <h2 class="item-name"><a href="#">SUAVECITO<br>Гель для волос</a></h2>
+                        <p class="item-price">290 руб.</p><a class="item-buy btn" href="#">Купить</a>
+                    </div>
+                    <div class="shop-item">
+                        <div class="item-img"><a href="#"><img src="pict/shop4.jpg"></a></div>
+                        <h2 class="item-name"><a href="#">AMERICAN CREW<br>Глина для укладки волос</a></h2>
+                        <p class="item-price">500 руб.</p><a class="item-buy btn" href="#">Купить</a>
+                    </div>
+                    <div class="shop-item">
+                        <div class="item-img"><a href="#"><img src="pict/shop5.jpg"></a></div>
+                        <h2 class="item-name"><a href="#">AMERICAN CREW<br>Гель для волос</a></h2>
+                        <p class="item-price">300 руб.</p><a class="item-buy btn" href="#">Купить</a>
+                    </div>
+                    <div class="shop-item">
+                        <div class="item-img"><a href="#"><img src="pict/shop6.jpg"></a></div>
+                        <h2 class="item-name"><a href="#">BAXTER OF CALIFORNIA<br>Набор для бритья</a></h2>
+                        <p class="item-price">3900 руб.</p><a class="item-buy btn" href="#">Купить</a>
+                    </div>
+                    <div class="shop-paginator">
+                        <a class="btn" href="#">1</a>
+                        <span class="btn active">2</span>
+                        <a class="btn" href="#">3</a>
+                        <a class="btn" href="#">4</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <footer class="main-footer main-footer-inner">
+            <div class="container clearfix">
+                <section class="footer-contacts">
+                        Barbershop «Borodinski»<br>
+                        Адрес: г. Москва, ул. Собаки Павлова, д. 13<br>
+                        <a href="#">Как нас найти?</a><br>
+                        Телефон: +7 (495) 666-02-666
+                </section>
+                <section class="footer-social">
+                    <p>Давайте дружить!</p>
+                    <a class="social-btn social-btn-vk" href="#">Вконтакте</a><!--
+                 --><a class="social-btn social-btn-fb" href="#">Фейсбук</a><!--
+                 --><a class="social-btn social-btn-im" href="#">Инстаграм</a>
+                </section>
+                <section class="footer-copyright">
+                    <p>Дизайн сайта:</p>
+                    <a class="btn" href="#"><!-- glukhanko.ru --></a>
+                </section>
+            </div>
+        </footer>
+        
+        <div class="modal-login">
+            <h2 class="content-column-title">Личный кабинет</h2>
+            <p>Введите пожалуйста свой логин и пароль</p>
+            <form class="login-form" action="/echo" method="post">
+                <input type="text" name="login" placeholder="Логин">
+                <input type="password" name="password" placeholder="Пароль">
+                <input type="checkbox" name="remember" id="remember-me"><label for="remember-me">Запомните меня</label>
+                <a href="#">Я забыл пароль!</a>
+                <button class="btn" type="submit">Войти</button>
+            </form>
+            <div class="modal-close">Закрыть</div>
+        </div>
+
+    <script src="scripts.js"></script>
+    </body>
+</html>
